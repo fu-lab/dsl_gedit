@@ -28,6 +28,61 @@
         </context>
         <context ref="def:shell-like-comment" /> <!-- Note: reference contexts cannot have an id attribute. -->
 
+        <context id="ref" style-ref="dsl:ref">
+          <start>\[ref\]</start>
+          <end>\[\/ref\]</end>
+        </context>
+
+        <context id="ex" style-ref="dsl:com_start">
+          <start>\[ex\]</start>
+          <end>\[\/ex\]</end>
+          <include>
+            <context id="c_ex" style-ref="dsl:com">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="pre" style-ref="dsl:com_start">
+          <start>\[pre\]</start>
+          <end>\[\/pre\]</end>
+          <include>
+            <context id="c_pre" style-ref="dsl:com">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="c" style-ref="dsl:com_start">
+          <start>\[c\]</start>
+          <end>\[\/c\]</end>
+          <include>
+            <context id="c_ins" style-ref="dsl:com">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="com" style-ref="dsl:com_start">
+          <start>\[com\]</start>
+          <end>\[\/com\]</end>
+          <include>
+            <context id="com_ins" style-ref="dsl:com">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="end" style-ref="dsl:end_start">
+          <start>\[end\]</start>
+          <end>\[\/end\]</end>
+          <include>
+            <context id="end_ins" style-ref="dsl:end">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
         <context id="p" style-ref="dsl:p_start">
           <start>\[p\]</start>
           <end>\[\/p\]</end>
@@ -48,6 +103,16 @@
           </include>
         </context>
 
+        <context id="item" style-ref="dsl:kpv_start">
+          <start>\[item\]</start>
+          <end>\[\/item\]</end>
+          <include>
+            <context id="item_ins" style-ref="dsl:kpv">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
         <context id="trn" style-ref="dsl:trn_start">
           <start>\[trn\]</start>
           <end>\[\/trn\]</end>
@@ -57,6 +122,11 @@
             </context>
             <context ref="p" />
             <context ref="i" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
           </include>
         </context>
 
@@ -69,6 +139,11 @@
             </context>
             <context ref="p" />
             <context ref="i" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
           </include>
         </context>
 
@@ -81,6 +156,11 @@
             </context>
             <context ref="p" />
             <context ref="i" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
           </include>
         </context>
 
@@ -91,7 +171,16 @@
           <include>
             <context ref="p" />
             <context ref="i" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
           </include>
+        </context>
+
+        <context id="example_tags" style-ref="dsl:example_tag">
+          <match>\[\/?(trans|pseudo|2000|2003add)\]</match>
         </context>
 
 
