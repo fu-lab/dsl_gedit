@@ -9,6 +9,9 @@
     <property name="globs" >*.dsl</property>
   </metadata>
 
+  <styles>
+    <style id="tag"                     _name="Tag"/>
+  </styles>
   <!--
   A list of styles can be defined here, and optionally mapped to the default styles.
   If no custom styles are used, the <styles> tag can be entirely omitted.
@@ -19,12 +22,81 @@
   <definitions>
     <context id="foo">
       <include>
-        <context id="string" style-ref="def:string" >
+        <context id="string" style-ref="def:identifier" >
           <start>«</start>
           <end>»</end>
         </context>
         <context ref="def:shell-like-comment" /> <!-- Note: reference contexts cannot have an id attribute. -->
+
+        <context id="p" style-ref="dsl:p_start">
+          <start>\[p\]</start>
+          <end>\[\/p\]</end>
+          <include>
+            <context id="p_ins" style-ref="dsl:p">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="i" style-ref="dsl:i_start">
+          <start>\[i\]</start>
+          <end>\[\/i\]</end>
+          <include>
+            <context id="i_ins" style-ref="dsl:i">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="trn" style-ref="dsl:trn_start">
+          <start>\[trn\]</start>
+          <end>\[\/trn\]</end>
+          <include>
+            <context id="trn_ins" style-ref="dsl:trn">
+                <match>[^\[]+</match>
+            </context>
+            <context ref="p" />
+            <context ref="i" />
+          </include>
+        </context>
+
+        <context id="rus" style-ref="dsl:rus_start">
+          <start>\[rus\]</start>
+          <end>\[\/rus\]</end>
+          <include>
+            <context id="rus_ins" style-ref="dsl:rus">
+                <match>[^\[]+</match>
+            </context>
+            <context ref="p" />
+            <context ref="i" />
+          </include>
+        </context>
+
+        <context id="kpv" style-ref="dsl:kpv_start">
+          <start>\[kpv\]</start>
+          <end>\[\/kpv\]</end>
+          <include>
+            <context id="kpv_ins" style-ref="dsl:kpv">
+                <match>[^\[]+</match>
+            </context>
+            <context ref="p" />
+            <context ref="i" />
+          </include>
+        </context>
+
+
+        <context id="m1" style-ref="dsl:m1">
+          <start>\[m1\]</start>
+          <end>\[\/m\]</end>
+          <include>
+            <context ref="p" />
+            <context ref="i" />
+          </include>
+        </context>
+
+
       </include>
     </context>
+
   </definitions>
 </language>
