@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Author and license info (use one of the existing language files as a template)
+-->
+<language id="foo" _name="Foo" version="2.0" _section="Sources" >
+
+  <metadata>
+    <property name="mimetypes" >text/x-foo</property>
+    <property name="globs" >*.dsl</property>
+  </metadata>
+
+  <!--
+  A list of styles can be defined here, and optionally mapped to the default styles.
+  If no custom styles are used, the <styles> tag can be entirely omitted.
+  The full list of available styles can be found in the `def.lang` file:
+  https://git.gnome.org/browse/gtksourceview/tree/data/language-specs/def.lang
+  -->
+
+  <definitions>
+    <context id="foo">
+      <include>
+        <context id="string" style-ref="def:string" >
+          <start>«</start>
+          <end>»</end>
+        </context>
+        <context ref="def:shell-like-comment" /> <!-- Note: reference contexts cannot have an id attribute. -->
+      </include>
+    </context>
+  </definitions>
+</language>
