@@ -21,7 +21,7 @@
   -->
 
   <definitions>
-    <context id="foo">
+    <context id="dsl_fulab">
       <include>
         <context id="string" style-ref="def:identifier" >
           <start>«</start>
@@ -104,6 +104,16 @@
           </include>
         </context>
 
+        <context id="u" style-ref="dsl:i_start">
+          <start>\[i\]</start>
+          <end>\[\/i\]</end>
+          <include>
+            <context id="u_ins" style-ref="dsl:i">
+                <match>[^\[]+</match>
+            </context>
+          </include>
+        </context>
+
         <context id="item" style-ref="dsl:kpv_start">
           <start>\[item\]</start>
           <end>\[\/item\]</end>
@@ -123,6 +133,7 @@
             </context>
             <context ref="p" />
             <context ref="i" />
+            <context ref="u" />
             <context ref="com" />
             <context ref="ex" />
             <context ref="c" />
@@ -140,6 +151,7 @@
             </context>
             <context ref="p" />
             <context ref="i" />
+            <context ref="u" />
             <context ref="com" />
             <context ref="ex" />
             <context ref="c" />
@@ -157,6 +169,7 @@
             </context>
             <context ref="p" />
             <context ref="i" />
+            <context ref="u" />
             <context ref="com" />
             <context ref="ex" />
             <context ref="c" />
@@ -172,6 +185,7 @@
           <include>
             <context ref="p" />
             <context ref="i" />
+            <context ref="u" />
             <context ref="com" />
             <context ref="ex" />
             <context ref="c" />
@@ -184,6 +198,9 @@
           <match>\[\/?(trans|pseudo|2000|2003add)\]</match>
         </context>
 
+        <context id="main_word" style-ref="dsl:rus">
+          <match>^[^\t]+$</match>
+        </context>
 
       </include>
     </context>

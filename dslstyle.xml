@@ -21,9 +21,9 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 -->
-<style-scheme id="dslstyle" _name="DSLstyle" version="1.0">
+<style-scheme id="dsl_fulab_style" _name="DSL (FU-lab style 1)" version="1.0">
   <author>FULab team</author>
-  <_description>DSL color scheme (variant 1)</_description>
+  <_description>DSL color scheme (FU-lab variant 1)</_description>
 
   <!-- The scheme tries to look like the default GVim scheme,
        since it is also what the hardwired GtkSourceView 1 color
@@ -107,32 +107,34 @@
   <style name="Others 2"                    foreground="#008B8B"/>
   <style name="Others 3"                    foreground="#6A5ACD"/>
 
-  <style name="dsl:com"                 foreground="#E6E6E6"/> <!--  bold="true" -->
-  <style name="dsl:com_start"                 foreground="#E6E6E6"/>
+  <!-- c and com -->
+  <style name="dsl:com"                 foreground="#989898"/> <!--  bold="true" -->
+  <style name="dsl:com_start"                 foreground="#A1A1A1"/>
 
-  <style name="dsl:end"                 foreground="#F9E0E0"/> <!--  bold="true" -->
-  <style name="dsl:end_start"                 foreground="#F9E0E0"/>
+  <style name="dsl:end"                 foreground="#989898"/> <!--  bold="true" -->
+  <style name="dsl:end_start"                 foreground="#C7B3B3"/>
 
-  <style name="dsl:p"                 foreground="#b6f7a2"/> <!--  bold="true" -->
-  <style name="dsl:p_start"                 foreground="#b6f7a2"/>
+  <style name="dsl:p"                 foreground="#989898"/> <!--  bold="true" -->
+  <style name="dsl:p_start"                 foreground="#92C682"/>
 
-  <style name="dsl:i"                 foreground="#cdfffc"/> <!--  bold="true" -->
-  <style name="dsl:i_start"                 foreground="#cdfffc"/>
+  <!-- i and u -->
+  <style name="dsl:i"                 foreground="#989898"/> <!--  bold="true" -->
+  <style name="dsl:i_start"                 foreground="#90B2B0"/>
 
-  <style name="dsl:trn"                 foreground="#000000"/>
-  <style name="dsl:trn_start"                 foreground="#cecece"/>
+  <style name="dsl:trn"                 foreground="#003399" bold="true"/>
+  <style name="dsl:trn_start"                 foreground="#ABA3BC"/>
 
   <style name="dsl:rus"                 foreground="#990033"/>
-  <style name="dsl:rus_start"                 foreground="#EBCCD6"/>
+  <style name="dsl:rus_start"                 foreground="#BCA3AB"/>
 
   <style name="dsl:kpv"                 foreground="#003399"/>
-  <style name="dsl:kpv_start"                 foreground="#D6CCEB"/>
+  <style name="dsl:kpv_start"                 foreground="#ABA3BC"/>
 
-  <style name="dsl:m1"                 foreground="#b6f7a2"/>
+  <style name="dsl:m1"                 foreground="#A1A1A1"/>
 
-  <style name="dsl:ref"                 foreground="#3366FF"/> <!--  bold="true" -->
+  <style name="dsl:ref"                 foreground="#989898"/> <!--  bold="true" -->
   <style name="dsl:ref_start"                 foreground="#3366FF"/>
 
-  <style name="dsl:example_tag" foreground="#006600"/>
+  <style name="dsl:example_tag" foreground="#338533"/>
 
 </style-scheme>
