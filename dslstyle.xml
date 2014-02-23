@@ -103,40 +103,40 @@
   <style name="sh:variable"                 foreground="#6A5ACD"/>
 
   <!-- legacy styles for old lang files -->
-  <style name="Others"                      foreground="#2E8B57" /> <!-- bold="true" -->
-  <style name="Others 2"                    foreground="#008B8B"/>
-  <style name="Others 3"                    foreground="#6A5ACD"/>
+  <style name="Others"                      foreground="#C0DCCD" /> <!-- bold="true" -->
+  <style name="Others 2"                    foreground="#66B9B9"/>
+  <style name="Others 3"                    foreground="#A69CE1"/>
 
   <!-- c and com -->
   <style name="dsl:com"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:com_start"                 foreground="#D6AD33"/>
+  <style name="dsl:com_start"                 foreground="#EAD699"/>
 
   <style name="dsl:end"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:end_start"                 foreground="#D6D633"/>
+  <style name="dsl:end_start"                 foreground="#EAEA99"/>
 
   <style name="dsl:p"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:p_start"                 foreground="#759E68"/>
+  <style name="dsl:p_start"                 foreground="#9EBB95"/>
 
   <!-- i and u -->
   <style name="dsl:i"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:i_start"                 foreground="#666699"/>
+  <style name="dsl:i_start"                 foreground="#9494FF"/>
 
   <style name="dsl:trn"                 foreground="#003399"/>
-  <style name="dsl:trn_start"                 foreground="#9BB4FF"/>
+  <style name="dsl:trn_start"                 foreground="#C7D5FF"/>
 
   <style name="dsl:rus"                 foreground="#990033"/>
-  <style name="dsl:rus_start"                 foreground="#FF47A3"/>
+  <style name="dsl:rus_start"                 foreground="#FF91C8"/>
 
   <style name="dsl:kpv"                 foreground="#003399"/>
-  <style name="dsl:kpv_start"                 foreground="#33CCCC"/>
+  <style name="dsl:kpv_start"                 foreground="#85E0E0"/>
 
-  <style name="dsl:m1"                 foreground="#D6AD33"/>
+  <style name="dsl:m1"                 foreground="#F1E4BB"/>
 
   <style name="dsl:ref"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:ref_start"                 foreground="#E6E65C"/>
+  <style name="dsl:ref_start"                 foreground="#F0F09D"/>
 
   <style name="dsl:pre"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:pre_start"                 foreground="#4DDBB8"/>
+  <style name="dsl:pre_start"                 foreground="#A6EDDC"/>
 
   <style name="dsl:example_tag" foreground="#D65CAD"/>
 
