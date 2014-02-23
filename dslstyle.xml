@@ -121,7 +121,7 @@
   <style name="dsl:i"                 foreground="#989898"/> <!--  bold="true" -->
   <style name="dsl:i_start"                 foreground="#90B2B0"/>
 
-  <style name="dsl:trn"                 foreground="#003399" bold="true"/>
+  <style name="dsl:trn"                 foreground="#000000"/>
   <style name="dsl:trn_start"                 foreground="#ABA3BC"/>
 
   <style name="dsl:rus"                 foreground="#990033"/>
