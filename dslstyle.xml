@@ -23,7 +23,7 @@
 -->
 <style-scheme id="dslstyle" _name="DSLstyle" version="1.0">
   <author>FULab team</author>
-  <_description>DSL color scheme</_description>
+  <_description>DSL color scheme (variant 1)</_description>
 
   <!-- The scheme tries to look like the default GVim scheme,
        since it is also what the hardwired GtkSourceView 1 color

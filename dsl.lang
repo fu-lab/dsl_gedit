@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Author and license info (use one of the existing language files as a template)
+ Author: FU-Lab team <lab@komikyv.ru>
+ License: MIT
 -->
-<language id="foo" _name="Foo" version="2.0" _section="Sources" >
+<language id="dsl_fulab" _name="DSL (FU-lab)" version="2.0" _section="Sources" >
 
   <metadata>
     <property name="mimetypes" >text/x-dsl</property>
