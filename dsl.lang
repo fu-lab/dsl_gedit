@@ -5,7 +5,7 @@
 <language id="foo" _name="Foo" version="2.0" _section="Sources" >
 
   <metadata>
-    <property name="mimetypes" >text/x-foo</property>
+    <property name="mimetypes" >text/x-dsl</property>
     <property name="globs" >*.dsl</property>
   </metadata>
 
