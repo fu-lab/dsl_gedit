@@ -29,9 +29,14 @@
         </context>
         <context ref="def:shell-like-comment" /> <!-- Note: reference contexts cannot have an id attribute. -->
 
-        <context id="ref" style-ref="dsl:ref">
+        <context id="ref" style-ref="dsl:ref_start">
           <start>\[ref\]</start>
           <end>\[\/ref\]</end>
+          <include>
+            <context id="ref_ins" style-ref="dsl:ref">
+                <match>[^\[]+</match>
+            </context>
+          </include>
         </context>
 
         <context id="ex" style-ref="dsl:com_start">
@@ -44,11 +49,11 @@
           </include>
         </context>
 
-        <context id="pre" style-ref="dsl:com_start">
+        <context id="pre" style-ref="dsl:pre_start">
           <start>\[pre\]</start>
           <end>\[\/pre\]</end>
           <include>
-            <context id="c_pre" style-ref="dsl:com">
+            <context id="c_pre" style-ref="dsl:pre">
                 <match>[^\[]+</match>
             </context>
           </include>
