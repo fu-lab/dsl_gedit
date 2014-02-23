@@ -122,15 +122,15 @@
   <style name="dsl:i_start"                 foreground="#9494FF"/>
 
   <style name="dsl:trn"                 foreground="#003399"/>
-  <style name="dsl:trn_start"                 foreground="#C7D5FF"/>
+  <style name="dsl:trn_start"                 foreground="#B3C0E6"/>
 
   <style name="dsl:rus"                 foreground="#990033"/>
-  <style name="dsl:rus_start"                 foreground="#FFBDDE"/>
+  <style name="dsl:rus_start"                 foreground="#E6AAC8"/>
 
   <style name="dsl:kpv"                 foreground="#003399"/>
-  <style name="dsl:kpv_start"                 foreground="#B6ECEC"/>
+  <style name="dsl:kpv_start"                 foreground="#A4D4D4"/>
 
-  <style name="dsl:m1"                 foreground="#F1E4BB"/>
+  <style name="dsl:m1"                 foreground="#D9CDA8"/>
 
   <style name="dsl:ref"                 foreground="#626262"/> <!--  bold="true" -->
   <style name="dsl:ref_start"                 foreground="#F0F09D"/>
@@ -138,6 +138,6 @@
   <style name="dsl:pre"                 foreground="#626262"/> <!--  bold="true" -->
   <style name="dsl:pre_start"                 foreground="#A6EDDC"/>
 
-  <style name="dsl:example_tag" foreground="#C2E6E6"/>
+  <style name="dsl:example_tag" foreground="#AFCFCF"/>
 
 </style-scheme>
