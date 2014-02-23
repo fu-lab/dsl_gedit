@@ -109,10 +109,10 @@
 
   <!-- c and com -->
   <style name="dsl:com"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:com_start"                 foreground="#EAD699"/>
+  <style name="dsl:com_start"                 foreground="#D3C18A"/>
 
   <style name="dsl:end"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:end_start"                 foreground="#EAEA99"/>
+  <style name="dsl:end_start"                 foreground="#D3D38A"/>
 
   <style name="dsl:p"                 foreground="#626262"/> <!--  bold="true" -->
   <style name="dsl:p_start"                 foreground="#9EBB95"/>
@@ -130,7 +130,7 @@
   <style name="dsl:kpv"                 foreground="#003399"/>
   <style name="dsl:kpv_start"                 foreground="#A4D4D4"/>
 
-  <style name="dsl:m1"                 foreground="#D9CDA8"/>
+  <style name="dsl:m1"                 foreground="#C3B897"/>
 
   <style name="dsl:ref"                 foreground="#626262"/> <!--  bold="true" -->
   <style name="dsl:ref_start"                 foreground="#F0F09D"/>
