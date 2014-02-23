@@ -147,6 +147,24 @@
           </include>
         </context>
 
+        <context id="udm" style-ref="dsl:udm_start">
+          <start>\[udm\]</start>
+          <end>\[\/udm\]</end>
+          <include>
+            <context id="udm_ins" style-ref="dsl:udm">
+                <match>[^\[]+</match>
+            </context>
+            <context ref="p" />
+            <context ref="i" />
+            <context ref="u" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
+          </include>
+        </context>
+
         <context id="rus" style-ref="dsl:rus_start">
           <start>\[rus\]</start>
           <end>\[\/rus\]</end>
