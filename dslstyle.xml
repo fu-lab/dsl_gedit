@@ -133,7 +133,7 @@
   <style name="dsl:m1"                 foreground="#C3B897"/>
 
   <style name="dsl:ref"                 foreground="#626262"/> <!--  bold="true" -->
-  <style name="dsl:ref_start"                 foreground="#F0F09D"/>
+  <style name="dsl:ref_start"                 foreground="#ADD633"/>
 
   <style name="dsl:pre"                 foreground="#626262"/> <!--  bold="true" -->
   <style name="dsl:pre_start"                 foreground="#A6EDDC"/>
