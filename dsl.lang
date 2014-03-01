@@ -165,6 +165,44 @@
           </include>
         </context>
 
+        <context id="udm" style-ref="dsl:kpv_start">
+          <start>\[udm\]</start>
+          <end>\[\/udm\]</end>
+          <include>
+            <context id="kpv_udm" style-ref="dsl:kpv">
+                <match>[^\[]+</match>
+            </context>
+            <context ref="p" />
+            <context ref="i" />
+            <context ref="u" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
+          </include>
+        </context>
+
+
+        <context id="mhr" style-ref="dsl:kpv_start">
+          <start>\[mhr\]</start>
+          <end>\[\/mhr\]</end>
+          <include>
+            <context id="mhr_ins" style-ref="dsl:kpv">
+                <match>[^\[]+</match>
+            </context>
+            <context ref="p" />
+            <context ref="i" />
+            <context ref="u" />
+            <context ref="com" />
+            <context ref="ex" />
+            <context ref="c" />
+            <context ref="pre" />
+            <context ref="ref" />
+          </include>
+        </context>
+
+
         <context id="kpv" style-ref="dsl:kpv_start">
           <start>\[kpv\]</start>
           <end>\[\/kpv\]</end>
